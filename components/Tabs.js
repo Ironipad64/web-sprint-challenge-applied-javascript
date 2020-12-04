@@ -9,3 +9,14 @@
 //    <div class="tab">topic here</div>
 //
 // NOTE: you do _not_ need to install axios as it's included in the HTML via script element
+
+function tabMaker({ tab }) {
+    const tabTopic = document.createElement("div");
+
+    tabTopic.classList.add("tab");
+
+    tab.textContent = tab;
+
+    return tabTopic
+}
+
